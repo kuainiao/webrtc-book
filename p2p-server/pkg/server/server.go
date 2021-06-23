@@ -1,10 +1,11 @@
 package server
 
 import (
+	"fmt"
+	"github.com/gorilla/websocket"
 	"net/http"
 	"p2p-server/pkg/util"
 	"strconv"
-	"github.com/gorilla/websocket"
 )
 
 //服务配置
@@ -65,6 +66,7 @@ func NewP2PServer(wsHandler func(ws *WebSocketConn, request *http.Request)) *P2P
 
 //WebSocket请求处理
 func (server *P2PServer) handleWebSocketRequest(writer http.ResponseWriter, request *http.Request) {
+	fmt.Println("writer:", writer, ",request:", request)
 	//返回头
 	responseHeader := http.Header{}
 	//responseHeader.Add("Sec-WebSocket-Protocol", "protoo")
@@ -91,5 +93,11 @@ func (server *P2PServer) Bind(cfg P2PServerConfig) {
 	//输出日志
 	util.Infof("P2P Server listening on: %s:%d", cfg.Host, cfg.Port)
 	//启动并监听安全连接
-	panic(http.ListenAndServeTLS(cfg.Host+":"+strconv.Itoa(cfg.Port), cfg.CertFile, cfg.KeyFile, nil))
+	if cfg.CertFile == "" {
+		util.Infof("ws P2P Server listening on: %s:%d", cfg.Host, cfg.Port)
+		panic(http.ListenAndServe(cfg.Host+":"+strconv.Itoa(cfg.Port), nil))
+	}else {
+		util.Infof("wss P2P Server listening on: %s:%d", cfg.Host, cfg.Port)
+		panic(http.ListenAndServeTLS(cfg.Host+":"+strconv.Itoa(cfg.Port), cfg.CertFile, cfg.KeyFile, nil))
+	}
 }

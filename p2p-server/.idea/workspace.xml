@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1547d518-2288-4ce8-a5f8-1ceeb27687bb" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="1547d518-2288-4ce8-a5f8-1ceeb27687bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../h5-samples/dist/assets/webrtc.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../h5-samples/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../h5-samples/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../h5-samples/dist/samples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../h5-samples/dist/samples.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../h5-samples/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/../h5-samples/nohup.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../h5-samples/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../h5-samples/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../h5-samples/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../h5-samples/src/p2p/P2PClient.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../h5-samples/src/p2p/P2PClient.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../turn-server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../turn-server/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../turn-server/configs/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../turn-server/configs/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../turn-server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../turn-server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../turn-server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../turn-server/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../turn-server/pkg/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../turn-server/pkg/server/server.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,11 +33,19 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.13.4/libexec" />
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1c6FF633ubJNo71ZMNmcecnYEQ8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
@@ -27,34 +53,105 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/configs/certs" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/configs/certs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pkg/util" />
       <recent name="$PROJECT_DIR$/pkg/signaler" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager">
+    <configuration name="go build p2p-server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="p2p-server" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="p2p-server" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="Go Build.go build p2p-server" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="direct" />
+      </map>
+    </environment>
     <proxy>direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="640" y="450" key="#GOROOT" timestamp="1624241480901">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="640" y="450" key="#GOROOT/0.23.1680.986@0.23.1680.986" timestamp="1624241480901" />
+    <state x="582" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624372430075">
+      <screen x="0" y="23" width="1680" height="983" />
+    </state>
+    <state x="582" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.983@0.23.1680.983" timestamp="1624372430075" />
+    <state x="427" y="86" key="CommitChangelistDialog2" timestamp="1624326428901">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="427" y="86" key="CommitChangelistDialog2/0.23.1680.982@0.23.1680.982" timestamp="1624326428901" />
+    <state x="168" y="109" key="DiffContextDialog" timestamp="1624326424582">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="168" y="109" key="DiffContextDialog/0.23.1680.982@0.23.1680.982" timestamp="1624326424582" />
+    <state width="1638" height="310" key="GridCell.Tab.0.bottom" timestamp="1624372638027">
+      <screen x="0" y="23" width="1680" height="983" />
+    </state>
+    <state width="1638" height="310" key="GridCell.Tab.0.bottom/0.23.1680.982@0.23.1680.982" timestamp="1624328201979" />
+    <state width="1638" height="310" key="GridCell.Tab.0.bottom/0.23.1680.983@0.23.1680.983" timestamp="1624372638027" />
+    <state width="1638" height="265" key="GridCell.Tab.0.bottom/0.23.1680.986@0.23.1680.986" timestamp="1624255284772" />
+    <state width="1638" height="310" key="GridCell.Tab.0.center" timestamp="1624372638026">
+      <screen x="0" y="23" width="1680" height="983" />
+    </state>
+    <state width="1638" height="310" key="GridCell.Tab.0.center/0.23.1680.982@0.23.1680.982" timestamp="1624328201979" />
+    <state width="1638" height="310" key="GridCell.Tab.0.center/0.23.1680.983@0.23.1680.983" timestamp="1624372638026" />
+    <state width="1638" height="265" key="GridCell.Tab.0.center/0.23.1680.986@0.23.1680.986" timestamp="1624255284771" />
+    <state width="1638" height="310" key="GridCell.Tab.0.left" timestamp="1624372638025">
+      <screen x="0" y="23" width="1680" height="983" />
+    </state>
+    <state width="1638" height="310" key="GridCell.Tab.0.left/0.23.1680.982@0.23.1680.982" timestamp="1624328201976" />
+    <state width="1638" height="310" key="GridCell.Tab.0.left/0.23.1680.983@0.23.1680.983" timestamp="1624372638025" />
+    <state width="1638" height="265" key="GridCell.Tab.0.left/0.23.1680.986@0.23.1680.986" timestamp="1624255284771" />
+    <state width="1638" height="310" key="GridCell.Tab.0.right" timestamp="1624372638026">
+      <screen x="0" y="23" width="1680" height="983" />
+    </state>
+    <state width="1638" height="310" key="GridCell.Tab.0.right/0.23.1680.982@0.23.1680.982" timestamp="1624328201979" />
+    <state width="1638" height="310" key="GridCell.Tab.0.right/0.23.1680.983@0.23.1680.983" timestamp="1624372638026" />
+    <state width="1638" height="265" key="GridCell.Tab.0.right/0.23.1680.986@0.23.1680.986" timestamp="1624255284771" />
+    <state x="349" y="152" key="SettingsEditor" timestamp="1624241367431">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="349" y="152" key="SettingsEditor/0.23.1680.986@0.23.1680.986" timestamp="1624241367431" />
+    <state x="541" y="268" width="598" height="490" key="find.popup" timestamp="1624408735084">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="541" y="268" width="598" height="490" key="find.popup/0.23.1680.981@0.23.1680.981" timestamp="1624408735084" />
+    <state x="541" y="268" width="598" height="490" key="find.popup/0.23.1680.983@0.23.1680.983" timestamp="1624357370052" />
   </component>
 </project>

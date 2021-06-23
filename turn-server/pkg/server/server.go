@@ -1,16 +1,15 @@
 package server
 
 import (
-	"net/http"
-	"strconv"
-
 	"crypto/hmac"
 	"crypto/sha1"
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"net"
+	"net/http"
 	"net/url"
+	"strconv"
 	"time"
 	"turn-server/pkg/logger"
 	"turn-server/pkg/turn"
@@ -81,7 +80,13 @@ func (server *HttpsServer) Bind(cfg HttpsServerConfig) {
 	// Websocket handle fun
 	http.HandleFunc(cfg.TurnServerPath, server.HandleTurnServerCredentials)
 	logger.Infof("Golang Turn Server listening on: %s:%d", cfg.Host, cfg.Port)
-	panic(http.ListenAndServeTLS(cfg.Host+":"+strconv.Itoa(cfg.Port), cfg.CertFile, cfg.KeyFile, nil))
+	if cfg.CertFile == "" {
+		logger.Infof("http Golang Turn Server listening on: %s:%d", cfg.Host, cfg.Port)
+		panic(http.ListenAndServe(cfg.Host+":"+strconv.Itoa(cfg.Port), nil))
+	}else {
+		logger.Infof("https Golang Turn Server listening on: %s:%d", cfg.Host, cfg.Port)
+		panic(http.ListenAndServeTLS(cfg.Host+":"+strconv.Itoa(cfg.Port), cfg.CertFile, cfg.KeyFile, nil))
+	}
 }
 
 func (s HttpsServer) authHandler(username string, realm string, srcAddr net.Addr) (string, bool) {
