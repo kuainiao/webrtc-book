@@ -1,0 +1,10 @@
+# github.com/chuckpreslar/emission v0.0.0-20170206194824-a7ddd980baf9
+github.com/chuckpreslar/emission
+# github.com/gorilla/websocket v1.4.1
+github.com/gorilla/websocket
+# github.com/rs/zerolog v1.18.0
+github.com/rs/zerolog
+github.com/rs/zerolog/internal/cbor
+github.com/rs/zerolog/internal/json
+# gopkg.in/ini.v1 v1.51.1
+gopkg.in/ini.v1
